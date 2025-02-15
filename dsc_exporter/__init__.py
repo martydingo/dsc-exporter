@@ -8,7 +8,7 @@ class dsc_exporter:
         async def startupEvent():
             dsc(self.config)
             
-        uvicorn.run(dsc.fastApiApp)
+        uvicorn.run(dsc.fastApiApp, host="0.0.0.0")
         
         
 
